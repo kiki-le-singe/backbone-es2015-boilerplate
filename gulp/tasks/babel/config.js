@@ -2,10 +2,10 @@
 
 module.exports = {
   babel: {
-    src: 'app/scripts/**/*.js',
+    entries: 'app/scripts/init.js',
     dev: {
       dest: 'app/scripts/',
-      concat: 'script.dev.js'
+      source: 'script.dev.js'
     },
     dist: {
       dest: 'dist/js/',
