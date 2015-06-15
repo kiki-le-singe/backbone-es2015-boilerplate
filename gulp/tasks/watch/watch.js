@@ -18,6 +18,6 @@ var config = require('./config').watch;
 
 gulp.task('watch', ['js-watch']);
 
-gulp.task('js-watch', function () {
+gulp.task('js-watch', function() {
   gulp.watch(config.js, ['babelify:dev']);
 });
