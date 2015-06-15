@@ -15,5 +15,5 @@ gulp.task('open:server', function () {
   });
 
   // gulp.watch([config.css, config.templates], reload);
-  gulp.watch([config.js], reload);
+  gulp.watch([config.css, config.js], reload);
 });
