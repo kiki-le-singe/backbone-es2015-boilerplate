@@ -14,7 +14,7 @@ export default class extends Router {
   }
 
   index () {
-    $('#content').html(new indexView().render().el);
+    $('.container').html(new indexView().render().el);
     console.log('index');
   }
 
