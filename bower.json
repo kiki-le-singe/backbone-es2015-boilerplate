@@ -16,14 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "lodash": "^3.9.3",
-    "backbone.radio": "~0.9.0",
-    "jquery": "~2.1.4",
-    "modernizr": "~2.8.3",
-    "handlebars": "~3.0.3",
     "foundation": "~5.5.2",
-    "foundation-icon-fonts": "*",
-    "bluebird": "~2.9.27"
+    "foundation-icon-fonts": "*"
   },
   "directory": "bower_components"
 }
