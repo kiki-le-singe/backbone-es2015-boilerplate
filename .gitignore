@@ -6,4 +6,5 @@ dist
 app/bower_components
 app/styles/css
 app/scripts/script.dev.js
+app/scripts/script.dev.js.map
 reports
