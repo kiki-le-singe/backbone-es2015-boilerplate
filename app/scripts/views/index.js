@@ -1,4 +1,8 @@
 import {View} from 'backbone';
+import {_} from 'lodash';
+// import Handlebars from 'handlebars';
+import * as Handlebars from 'handlebars';
+// http://iamstef.net/ember-app-kit/guides/using-modules.html
 
 export default class extends View {
 
@@ -9,11 +13,14 @@ export default class extends View {
       }
     });
 
+    this.template = Handlebars.default.compile('<button id="foo">{{text}}</button>');
+    // this.template = _.template('<button id="foo">Click me!</button>');
+
     console.log('indexView');
   }
 
   render () {
-    this.$el.html('<button id="foo">Click me!</button>');
+    this.$el.html(this.template({text: 'Click me!'}));
     return this;
   }
 
