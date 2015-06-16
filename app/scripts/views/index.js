@@ -12,14 +12,13 @@ export default class extends View {
       }
     });
 
-    // this.template = Handlebars.default.compile('<button id="foo">{{text}}</button>');
-    this.template = _.template(this.getTemplate());
+    this.template = this.getTemplate();
 
     console.log('indexView');
   }
 
   render () {
-    this.$el.html(this.template({text: 'Click me!'}));
+    this.$el.html(this.template({success: 'Click me!'}));
     return this;
   }
 
@@ -28,6 +27,7 @@ export default class extends View {
   }
 
   getTemplate () {
-    return '<button id="foo"><%= text %></button>';
+    // return Handlebars.compile('<button id="foo">{{success}}</button>');
+    return _.template('<button id="foo"><%= success %></button>');
   }
 }
